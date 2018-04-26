@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>添加股票</title>
+		<link rel="stylesheet" type="text/css" href="./css/aui/aui.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_629931_2xcl15c9q8vyrpb9.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/stock_autocomplete_data.js"></script>
+		
+	</head>
+	<body>
+		<div class="as-box">
+			<div class="as-buy">
+				<ul>
+					<li class="as-buy-active">+我买入的</li>
+					<li>+我想买的</li>
+				</ul>
+			</div>
+			<div>
+				<div class="as-inputBox">
+					<label for=""><input type="text" id="sCode" placeholder="输入股票名称和代码" value="000001"/></label>
+					<label for=""><input type="text" placeholder="买入价格"/></label>
+					<label for=""><input type="text" placeholder="仓位"/></label>
+					<div class="as-stockList">
+						<ul>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script src="js/as.js"></script>
+	<script>
+		addStock.init()
+	</script>
+</html>

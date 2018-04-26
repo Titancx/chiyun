@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>问答</title>
+		<link rel="stylesheet" type="text/css" href="./css/aui/aui.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_629931_2xcl15c9q8vyrpb9.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+	</head>
+	<body>
+		<div class="wd-box">
+			<div class="aui-tab cy-tab" id="wd-tab">
+			    <div class="aui-tab-item aui-active">热门回答</div>
+			    <div class="aui-tab-item">找人提问</div>
+			</div>
+			<div class="wd-tabBox">
+				<div class="wd-answer">
+					<div class="wda-top">
+						<div class="wda-cg">
+							<p>持仓问题 快速解答</p>
+							<button>立即提问</button>
+						</div>
+						<div class="wda-intr">
+							<p><i class="iconfont icon-approve"></i>立即解答</p>
+							<p><i class="iconfont icon-approve"></i>专业研究团队</p>
+							<p><i class="iconfont icon-approve"></i>快速响应</p>
+						</div>
+					</div>
+					<div class="wda-jx">
+						<h5>精选内容</h5>
+						<div class="wda-jx-itemBox">
+							<div class="wda-jx-item">
+								<div class="wda-jxItem-text">
+									王老师，能帮我分析下达志科技吗？这个票一直都没涨，我套了好久了，成本在51附近。我需要调仓换票吗？
+								</div>
+								<div class="wda-jxItem-check">
+									<img src="img/wy.png"/>
+									<div class="wda-name">
+										<h5>王永</h5>
+										<div class="wda-zs">回答: <span>134字</span></div>
+									</div>
+									<div class="wda-jf">
+										500积分
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wda-jx">
+						<h5>最新回答</h5>
+						<div class="wda-jx-itemBox">
+							<div class="wda-jx-item">
+								<div class="wda-jxItem-text">
+									王老师，能帮我分析下达志科技吗？这个票一直都没涨，我套了好久了，成本在51附近。我需要调仓换票吗？
+								</div>
+								<div class="wda-jxItem-check">
+									<img src="img/wy.png"/>
+									<div class="wda-name">
+										<h5>王永</h5>
+										<div class="wda-zs">回答: <span>134字</span></div>
+									</div>
+									<div class="wda-jf">
+										<p>500积分</p>
+										<span>17:20</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wd-ask">
+					<div class="wdk-ItemBox">
+						<div class="wdk-item">
+							<div class="wdk-itemTop">
+								<img src="./img/wy.png" alt="" />
+								<div class="wdk-name">
+									<h5>王永</h5>
+									<div><span>257</span>个回答 | <span>508</span>个赞</div>
+								</div>
+								<div class="wdk-jf">
+									<span>500</span>积分
+								</div>
+							</div>
+							<div class="wdk-itemText">
+								擅长汇率，黄金，白银，房地产，原油等大类资产配置。综合运用结构，级别，周期的方法，对指数或价格所处位置做出全方位立体判研，以制定相应的应对策略。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/aui/aui-tab.js" ></script>
+	<script type="text/javascript">
+	    var tab = new auiTab({
+	        element:document.getElementById("wd-tab"),
+	        index:1,
+	        repeatClick:false
+	    },function(ret){
+	       	  $(".wd-tabBox>div").hide().eq(ret.index-1).show()
+	    });
+	</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>向大V提问</title>
+		<link rel="stylesheet" type="text/css" href="./css/aui/aui.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_629931_2xcl15c9q8vyrpb9.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+	</head>
+	<body>
+		<div class="av-box">
+			<div class="av-head">
+				<div class="av-top">
+					<img src="./img/wy.png"/>
+					<div class="av-info">
+						<div class="av-name">
+							<span>王永</span> | <span>涨停战法</span>
+						</div>
+						<div>
+							执业证书:<span>A0300616120001</span>
+						</div>
+					</div>
+				</div>
+				<div class="av-text">
+					上海财经大学研究生，十年以上证券研究从业 经历，五年私募基金投资经验，参与管理的定 赢基金2007年居朝阳永续中国私募基金风云榜 第五名的成绩。2009年加入金融界旗下的证券 之星，自创个股分析三步法，分析个股不求人 中国证券业协会注册投资顾问
+				</div>
+				<div class="av-num">
+					<div>回答数: <span>124</span></div>
+					<div>粉丝: <span>9540</span></div>
+				</div>
+			</div>
+			<div class="av-qBox">
+				<div class="av-qTop">
+					<h5>问题描述</h5>
+					<span>(必填)</span>
+				</div>
+				<div class="av-qInput">
+					<textarea name="av-input" id="" >写下你买这只股票的原因，持仓成本，买入时间以及你的操作风格，这样能更好的的帮助到您</textarea>
+				</div>
+			</div>
+			<div class="av-gm">
+				<div class="av-gmTop">
+					<h5>个人投资规模</h5>
+					<span>(选填，个人信息将被严格保密)</span>
+				</div>
+				<div class="av-check">
+					<ul>
+						<li>0~50W</li>
+						<li>50~100W</li>
+						<li>>100W</li>
+					</ul>
+				</div>
+			</div>
+			<div class="av-addBox">
+				<div class="av-addTop">
+					<h5>添加个股</h5>
+					<span>(选填，最多添加3只股票)</span>
+				</div>
+				<div class="av-add">
+					<span>+</span>
+					<a class="av-addBtn">点击添加</a>
+				</div>
+			</div>
+			<div class="av-askBtn">
+				立即提问: <span>500</span>积分
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".av-check>ul>li").click(function(){
+				$(this).addClass("av-check-active").siblings().removeClass("av-check-active")
+			})
+		})
+	</script>
+</html>
